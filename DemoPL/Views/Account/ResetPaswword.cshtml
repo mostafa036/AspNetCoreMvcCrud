@@ -1,0 +1,18 @@
+﻿@model ResetPasswordViewModel
+@{
+    ViewData["Title"] = "ResetPaswword";
+    Layout = "~/Views/Shared/_AuthLayout.cshtml";
+}
+
+<h1>ResetPaswword</h1>
+
+<div class="main-agileinfo">
+	<div class="agileits-top">
+		<form  method="post" asp-action="ResetPassword">
+			<div asp-validation-summary="All"></div>
+			<input class="text email" asp-for="NewPassword" placeholder="New Password" required="">
+			<input class="text"  asp-for="ConfirmPassword" placeholder="Confirm Password" required="">
+			<input type="submit" value="Reset Password">
+		</form>
+	</div>
+</div>

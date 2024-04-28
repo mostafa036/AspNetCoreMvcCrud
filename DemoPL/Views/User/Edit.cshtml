@@ -1,0 +1,20 @@
+﻿@model ApplicationUser
+@{
+    ViewData["Title"] = "Update";
+}
+
+<h1>Update New User</h1>
+<form asp-action="Edit">
+
+    <partial name="PartialViews/CreateEditUserPartialView" />
+    <input type="submit" value="Save" class="btn btn-primary" /> 
+    <a asp-action="Index" class="btn btn-light">Back To List</a>
+</form>
+
+@section validationScriptSection {
+
+    @*<script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>*@
+
+    <partial name="_ValidationScriptsPartial" />
+}
