@@ -1,4 +1,4 @@
-**AspNetCoreMvcCrudApp**
+#AspNetCoreMvcCrudApp
 
 Overview
 AspNetCoreMvcCrudApp is a sample project demonstrating CRUD operations using ASP.NET Core MVC, LINQ, and Entity Framework. This project integrates various technologies and design patterns  to provide a robust, scalable, and secure web application.
